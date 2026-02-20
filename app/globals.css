@@ -1,0 +1,33 @@
+/* Import Inter font - must be first */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply h-full scroll-smooth;
+  }
+
+  body {
+    @apply h-full bg-neutral-50 text-neutral-900 antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  /* Dark sections */
+  .section-dark {
+    @apply bg-navy-950 text-white;
+  }
+
+  .section-dark-alt {
+    @apply bg-navy-900 text-white;
+  }
+}
+
+@layer utilities {
+  /* Focus visible styles */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-electric-500 ring-offset-2 ring-offset-white;
+  }
+}
