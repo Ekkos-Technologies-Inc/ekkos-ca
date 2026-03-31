@@ -1,0 +1,20 @@
+# robots.txt for https://ekkos.ca
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# AI Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://ekkos.ca/sitemap.xml

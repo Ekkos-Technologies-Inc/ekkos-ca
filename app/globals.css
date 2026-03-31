@@ -1,0 +1,93 @@
+/* Import Inter and JetBrains Mono - must be first */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply h-full scroll-smooth bg-brutal-bg;
+  }
+
+  body {
+    @apply h-full bg-brutal-bg text-brutal-white antialiased overflow-x-hidden;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  /* Neo-brutalist tech custom utilities */
+  .brutal-border {
+    @apply border-4 border-brutal-white;
+  }
+  
+  .brutal-border-black {
+    @apply border-4 border-brutal-black;
+  }
+
+  .brutal-shadow-cyan {
+    @apply shadow-brutal-cyan transition-all hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[4px_4px_0px_0px_#00F0FF];
+  }
+
+  .brutal-shadow-pink {
+    @apply shadow-brutal-pink transition-all hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[4px_4px_0px_0px_#FF00FF];
+  }
+
+  .brutal-heading {
+    @apply font-black tracking-tighter uppercase font-mono;
+  }
+
+  .brutal-card {
+    @apply bg-brutal-black brutal-border p-6 lg:p-8 relative overflow-hidden;
+  }
+
+  .brutal-card-hover {
+    @apply brutal-card transition-all hover:-translate-y-1 hover:border-brutal-neon-cyan;
+  }
+
+  .brutal-button {
+    @apply inline-flex items-center justify-center font-mono font-bold uppercase tracking-wider border-4 border-brutal-white px-6 py-3 bg-brutal-black text-brutal-white transition-all hover:bg-brutal-white hover:text-brutal-black active:translate-x-[4px] active:translate-y-[4px];
+  }
+
+  .brutal-tag {
+    @apply inline-flex border-2 border-brutal-white px-2 py-0.5 text-[10px] font-mono font-bold uppercase tracking-widest bg-brutal-black text-brutal-white;
+  }
+
+  .hud-corner {
+    @apply absolute w-4 h-4 border-brutal-neon-cyan;
+  }
+}
+
+@layer utilities {
+  *:focus-visible {
+    @apply outline-none ring-4 ring-brutal-neon-cyan ring-offset-0;
+  }
+  
+  .bg-grid {
+    background-size: 50px 50px;
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  }
+
+  .scanline-overlay {
+    @apply pointer-events-none fixed inset-0 z-[9999] opacity-[0.03] bg-scanline;
+  }
+
+  .text-glow-cyan {
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+  }
+
+  .text-glow-pink {
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+  }
+
+  .brutal-gradient-bg {
+    @apply bg-gradient-to-br from-brutal-black via-[#111] to-[#0a0a0a];
+  }
+}
+
+/* Custom UI Components */
+.corner-tl { top: 0; left: 0; border-top-width: 4px; border-left-width: 4px; }
+.corner-tr { top: 0; right: 0; border-top-width: 4px; border-right-width: 4px; }
+.corner-bl { bottom: 0; left: 0; border-bottom-width: 4px; border-left-width: 4px; }
+.corner-br { bottom: 0; right: 0; border-bottom-width: 4px; border-right-width: 4px; }

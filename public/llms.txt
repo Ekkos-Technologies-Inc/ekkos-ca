@@ -1,0 +1,20 @@
+# Ekkos Technologies Inc.
+
+> Canadian AI company building ekkOS — the persistent memory infrastructure for AI agents, robotics, and enterprise systems.
+
+## About
+
+Ekkos Technologies Inc. is the company behind ekkOS, a cognitive substrate and memory infrastructure for intelligent systems. Based in Canada, we build the foundational memory layer that makes AI agents smarter over time.
+
+## Products
+
+- **ekkOS**: Persistent memory for AI coding tools (Claude Code, ChatGPT, Cursor).
+- **ekkOS Labs**: Research division exploring cognitive architectures for AGI.
+- **ekkOS SDK**: Developer toolkit for integrating persistent memory into any AI application.
+
+## Links
+
+- Product: https://ekkos.dev
+- Company: https://ekkos.ca
+- Documentation: https://docs.ekkos.dev
+- Research: https://ekkoslabs.com
